@@ -4,4 +4,16 @@ body {
         height: 200px ;
         width: 200px;
     }
-    tr:hover{background-color: rgb(241, 68, 6);}
+    tr:hover{background-color: rgb(241, 68, 6)}
+    h1{
+        color:rgb(255, 68, 0) ;
+        padding: 20px;
+        margin: 0px;
+        background-color: black;
+        display: inline-block;
+    }
+    a{
+      background-color: black;
+      color: white;
+      
+    }
