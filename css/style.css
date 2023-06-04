@@ -1,148 +1,203 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2? family= Wix+Madefor+Text & display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0% ;
+    padding: 0%;
 }
 
 body{
-    font-family: 'roboto', sans-serif;
-    background-color: #000;
-}
+    box-sizing:border-box;
+    font-family: 'Wix Madefor Text','Roboto',sans-serif;
+    background: url('https://i0.wp.com/www.styrkelabbet.se/wp-content/uploads/2014/12/St%C3%B6rre-muskeltillv%C3%A4xt.jpg?resize=768%2C426&ssl=1');
+   background-size: cover;
+  
 
-.contenedor{
-    width: 90%;
-    max-width: 1500px;
-    margin: auto;
-}
-
-nav{
-    width: 100%;
-    height: 80px;
-    background-color: rgb(0, 0, 0);
-    border-bottom: 1px solid transparent;
-    box-shadow: 1px 1px 10px 0 #ff5c00;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-
-}
-
-.nav{
-    display: flex ;
-    height: 80px;
-    width: 100%;
-    align-items:center ;
-    padding: 0 40px;
-
-}
-.nav .logo_texto {
-    position: absolute;
-    padding: auto;
+    /* background: #000; */
     
 }
 
-.nav .foto img {
-    height: 100%;
-}
-.nav .enlaces_header a{
-    color: #ff5c00;
-    
-    text-decoration: none;
-    
-    margin-right: 60px;
-}
-.enlaces_header{
-    margin-left: auto;
-}
-
-.contenido_header{
-    width: 100%;
-    height: 600px;
+.contenedor_header{
     display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 90px;
+    justify-content: space-evenly;
     align-items: center;
-    color: #fff;
-
 }
-.contenido_header> img {
-    height: 100px;
+
+.contenedor_header .navegation a{
+margin-left: 20px;
+color: #fff;
+font-weight: 600;
+text-decoration: none;
+}
+
+.contenedor_header .login {
     width: 100px;
-   
+    border-radius: 7px;
+    text-align: center;
 }
-
-.logo_barra{
+.contenedor_header .login a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.contenedor_header>a{
+    text-decoration: none;
+    color: #fff;
+}
+.contenedor_header .logo{
+    width: 150px;
     display: flex;
-    background-color: black;
-    height: 80px;
-    width: 100%;
+    align-items: center;
+}
+.contenedor_header .logo h1{
+    font-size: 20px;
+    margin-left: 10px;
 }
 
-.enlaces_header a:hover{
+.contenedor_header .logo img{
+    width: 50%;
+}
+#buttonbtn{
+    margin-left: 100px;
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
     color: #fff;
-    border: 1px solid #ff5c00;
-    transition: all ease-in-out .3s;
-    border-radius: 15px;
-    padding: 5px 10px ;
 }
 
-.contenedor .contenido_header .foto img{
-    justify-content: center;
-    height: 500px;
-    width: 800px ;
-    object-fit: cover;
-}
-.contenedor .contenido_header .foto{
-    padding-top: 150px ;
-}
-
-/* ////////////////subpaginas////////////////////// */
-
-.header_pg{
-    background-color: #000;
-    height: 12%;
-    border-bottom: 1px solid  #ff5c00 ;
-    padding: 0 40px;
-    box-shadow: 1px 1px 10px 0 #ff5c00;
-}
-
-.logo_img{
-    position: absolute;
-    top: 23px;
-    
-}
-.contenedor_session .inicio {
-    
-    color: #fff;
-    width: 100%;
-    padding: 0% ;
-    text-align: center;
-}
-
-.beginning_session{
-
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    padding: 40px 30px ;
-    margin-top: 15%;
-    border: 1px solid #ff5c00;
-
-}
-
-div>button{
-    margin-top: 20px;
-    background-color:#000;
-    color: #fff;
-    border: 1px solid #ff5c00;
-    border-radius: 10px;
-    padding: 5px ;
-}
-div>button:hover{
-    transition: all ease-in-out .3s;
-    background-color: #fff;
+.contenedor_header #buttonbtn:hover{
+    background-color: #e4e4e4;
     color:#000;
+    transition: all ease-in-out .5s;
+}
+
+.contenedor_header .navegation a:hover{
+    color: #f05d07;
+    transition: all ease-in-out .3s;
+}
+
+/* ##############################################section################################################### */
+
+section{
+    display: block;
+    margin-left: 110px;
+}
+
+.text{
+    margin-top: 150px;
+}
+
+.text>h2{
+    font-size: 40px;
+    font-weight:900;
+    margin-bottom: 20px;
+    color: #f05d07;
+}
+
+.text>h3{
+    font-size: 35px;
+    font-weight: 900px;
+    color: #fff;
+}
+.text  p {
+    margin-top: 20px;
+    width: 55%;
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+
+/* #########################pie de pagina######################################## */
+
+footer {
+    margin-top: 200px;
+    height: 15vh;
+    background-color:#000000;
+    padding: 50px 0 20px 0 ;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;   
+}
+
+.redes{
+    text-align: center;
 }
 
 
+.redes h4{
+    margin: 10px 0 ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.redes i {
+    margin-left: 20px;
+    color: #fff;
+    font-size: 20px;
+}
 
+.enlaces{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
 
+.enlaces h3{
+    margin: 10px 0 ;
+    
+    font-weight: 700;
+    color: #fff;
+}
 
+.enlaces a{
+    text-decoration: none;
+    color: #808080;
+    margin: 5px 0 ;
+}
+
+.enlaces a:hover{
+    color: #f05d07;
+    transition: all ease-in-out .3s;
+
+}
+
+.redes i:hover{
+    color: #f05d07;
+    transition: all ease-in-out .3s;
+}
+
+.contacto{
+    color: #fff;
+    text-align: center;
+}
+.contacto h3{
+    margin: 10px 0 ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.contacto .correo{
+    display: flex;
+    color: #808080;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center
+}
+
+.contacto .correo i{
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+}
+   
