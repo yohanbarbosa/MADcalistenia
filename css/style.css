@@ -8,7 +8,8 @@
 }
 
 body{
-    box-sizing:border-box;
+    height: 100%;
+    box-sizing:content-box;
     font-family: 'Wix Madefor Text','Roboto',sans-serif;
     background: url('https://i0.wp.com/www.styrkelabbet.se/wp-content/uploads/2014/12/St%C3%B6rre-muskeltillv%C3%A4xt.jpg?resize=768%2C426&ssl=1');
    background-size: cover;
@@ -91,6 +92,8 @@ text-decoration: none;
 section{
     display: block;
     margin-left: 110px;
+    margin-bottom: 350px;
+    margin-top: 200px;
 }
 
 .text{
@@ -120,8 +123,7 @@ section{
 /* #########################pie de pagina######################################## */
 
 footer {
-    margin-top: 200px;
-    height: 15vh;
+    margin-bottom: 0;
     background-color:#000000;
     padding: 50px 0 20px 0 ;
     overflow: hidden;
