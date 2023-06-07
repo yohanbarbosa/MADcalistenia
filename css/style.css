@@ -122,7 +122,8 @@ section{
 /* #########################pie de pagina######################################## */
 
 footer {
-    position: fixed; 
+    margin-top: 100px;
+    position: relative; 
     bottom: 0;
     width: 100%;
     background-color:#000000;
