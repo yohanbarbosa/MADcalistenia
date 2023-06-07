@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2? family= Wix+Madefor+Text & display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    font-family: 'Wix Madefor Text','Roboto',sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     box-sizing: content-box;
     background: #000;
 }
@@ -99,8 +97,15 @@ section p {
 
 /* ############################# footer ##################################### */
 
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+  
+    height: 30vh;
+}
 .wrapper{
-
     position: absolute;
     width: 80vw;
     transform: translate(-50%, -50%);
@@ -112,7 +117,6 @@ section p {
 .contenedor{
     width: 28vmin;
     height: 28vmin;
-    border: 1px solid rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -120,11 +124,9 @@ section p {
     position: relative;
     font-size: 16px;
     border-radius: 0.5em;
-    background-color: #383838;
-    border-bottom: 10px solid #18f98f;
 }
 i{
-    color: #18f98f;
+    color: gray;
     font-size: 2.5em;
     text-align: center;
 }
