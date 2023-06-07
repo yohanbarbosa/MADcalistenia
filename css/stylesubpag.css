@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-  @import url('https://fonts.googleapis.com/css2? family= Wix+Madefor+Text & display=swap');
 
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    font-family: 'Wix Madefor Text','Roboto',sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     box-sizing: content-box;
     background: #000;
 }
@@ -85,7 +82,7 @@ text-decoration: none;
 
 section{
     display: flex;
-    margin: 50px 50px 100px 115px  ;
+    margin: 50px 50px 0 115px  ;
 }
 section h2{
     font-size: 50px;
@@ -101,14 +98,14 @@ section p {
 /* ############################# footer ##################################### */
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
+  
     height: 30vh;
 }
 .wrapper{
-    margin-top: 100px;
     position: absolute;
     width: 80vw;
     transform: translate(-50%, -50%);
@@ -182,130 +179,4 @@ i{
         width: 100%;
         font-size: 8px;
     }
-}
-footer {
-    margin-top: 100px;
-    position: relative; 
-    bottom: 0;
-    width: 100%;
-    background-color:#000000;
-    padding: 50px 0 20px 0 ;
-    display: flex;
-    justify-content: space-evenly;   
-}
-
-.redes{
-    text-align: center;
-}
-
-
-.redes h4{
-    margin: 10px 0 ;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-}
-.redes i{
-    margin-left: 20px;
-    color: #fff;
-    font-size: 20px;
-}
-
-.enlaces{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.enlaces h3{
-    margin: 10px 0 ;
-    
-    font-weight: 700;
-    color: #fff;
-}
-
-.enlaces a{
-    text-decoration: none;
-    color: #808080;
-    margin: 5px 0 ;
-}
-
-.enlaces a:hover{
-    color: #f05d07;
-    transition: all ease-in-out .3s;
-
-}
-
-.redes i:hover{
-    color: #f05d07;
-    transition: all ease-in-out .3s;
-}
-
-.contacto{
-    color: #fff;
-    text-align: center;
-}
-.contacto h3{
-    margin: 10px 0 ;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-}
-.contacto .correo{
-    display: flex;
-    color: #808080;
-    font-size: 20px;
-    font-weight: 600;
-    align-items: center
-}
-
-.contacto .correo i{
-    color: #fff;
-    font-size: 30px;
-    margin-right: 10px;
-}
-
-/* ##################################################formadores######################################################## */
-.info_p{
-    border: 1px solid #000;
-}
-
-.info_p h1{
-    font-weight: 900;
-    font-size: 40px;
-    color: rgb(189, 189, 189);
-}
-
-.info_p p {
-    margin: 30px 0;
-    text-align: center;
-}
-.foto_f{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.foto_f .formador{
-    background-color: rgb(30, 30, 30);
-    margin-bottom: 60px;
-    position: relative;
-    display: inline-block;
-}
-
-.formador img{
-    display: block;
-    width: 300px;
-}
-
-.text_formador{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 280px;
-    position: absolute;
-    bottom: 0;
-      background-color:rgb(61, 61, 61);
-      color: #fff;
-      padding: 10px;
-      font-size: 16px;
 }
