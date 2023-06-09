@@ -88,16 +88,63 @@ section{
     margin: 50px 50px 100px 115px  ;
 }
 section h2{
+    margin-left: 10px;
     font-size: 50px;
     font-weight: 900;
     color: #aaaaaa;
 }
 
 section p {
+    
     margin-top: 20px;
     color: gray;
 }
 
+/* ################################section pag programas #########################*/
+
+.info_pro{
+    display: flex;
+    margin: 50px 50px 100px 115px  ;
+    
+    width: 600px;
+}
+.info_pro .titulo_pro{
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: 900;
+    color: #aaaaaa;
+}
+.info_pro p{
+   margin-left: 10px;
+    margin-top: 20px;
+    color: gray;
+}
+
+.programas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.programas .contenedor_p{
+    border: 1px solid #000000;
+    width: 350px;
+    height: 530px;
+    margin-bottom: 30px;
+}
+.img_p{
+    border: 1px solid #000;
+    width: 340px;
+    
+}
+.img_p img{
+    width: 100%;
+}
+
+.contenedor_p h1{
+    color: #fff;
+    font-weight: 900;
+}
 /* ############################# footer ##################################### */
 
 footer{
