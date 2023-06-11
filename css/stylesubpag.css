@@ -145,6 +145,59 @@ section p {
     color: #fff;
     font-weight: 900;
 }
+
+
+/* ################################section testimonios######################################### */
+
+.info_testimonio{
+    display: flex;
+    margin: 50px 50px 100px 115px  ;
+    
+    width: 600px;
+}
+.info_testimonio .titulo_testimonio{
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: 900;
+    color: #aaaaaa;
+}
+.info_testimonio p{
+   margin-left: 10px;
+    margin-top: 20px;
+    color: gray;
+}
+
+.content_testimonio{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.testimonio{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    flex-direction: column;
+}
+
+.testimonio .autor{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.autor img {
+    border-radius: 50%;
+    width: 60px;
+    margin-right: 20px;
+}
+
+.autor span{
+    color: #fff;
+    font-weight: 900;
+}
+  
+
 /* ############################# footer ##################################### */
 
 footer{
