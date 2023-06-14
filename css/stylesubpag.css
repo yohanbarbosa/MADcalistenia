@@ -148,25 +148,6 @@ section p {
 
 
 /* ################################section testimonios######################################### */
-
-.info_testimonio{
-    display: flex;
-    margin: 50px 50px 100px 115px  ;
-    
-    width: 600px;
-}
-.info_testimonio .titulo_testimonio{
-    margin-left: 10px;
-    font-size: 50px;
-    font-weight: 900;
-    color: #aaaaaa;
-}
-.info_testimonio p{
-   margin-left: 10px;
-    margin-top: 20px;
-    color: gray;
-}
-
 .content_testimonio{
     
     display: flex;
@@ -196,11 +177,98 @@ section p {
     color: #fff;
     font-weight: 900;
 }
-  
+
+/* #################################SECTION PRECIOS############################## */
+
+.planes{
+    display: flex;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content_plan{
+    position: relative;
+    border: 1px solid #000;
+    width: 350px;
+    height: 450px;
+    word-wrap: break-word;
+    padding: 10px;
+   
+}  
+.content_plan h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+  .content_plan ul {
+    padding: 0;
+    margin-left: 10px;
+    list-style-position: inside;
+    color: #808080;
+  }
+ .content_plan .price{
+    
+    color: #f05d07;
+    font-size: 30px;
+ }
+
+ .content_plan .btn{
+ 
+    border: 1px solid #ffffff;
+    bottom: 25px;
+    left: 10%;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   text-decoration: none;
+   color: #ffffff;
+ }
+    
+.content_plan .btn:hover{
+    background-color: #f05d07;
+    transition: all ease-in-out .7s;
+    color: #000;
+}
+/* ##################################################formadores######################################################## */
+
+.foto_f{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.foto_f .formador{
+    background-color: rgb(30, 30, 30);
+    margin-bottom: 60px;
+    position: relative;
+    display: inline-block;
+}
+
+.formador img{
+    display: block;
+    width: 300px;
+}
+
+.text_formador{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 280px;
+    position: absolute;
+    bottom: 0;
+      background-color:rgb(61, 61, 61);
+      color: #fff;
+      padding: 10px;
+      font-size: 16px;
+}
 
 /* ############################# footer ##################################### */
 
 footer{
+    
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -289,9 +357,10 @@ footer {
     bottom: 0;
     width: 100%;
     background-color:#000000;
-    padding: 50px 0 20px 0 ;
+    padding: 50px 0 0px 0 ;
     display: flex;
-    justify-content: space-evenly;   
+    justify-content: space-evenly; 
+  
 }
 
 .redes{
@@ -363,49 +432,4 @@ footer {
     color: #fff;
     font-size: 30px;
     margin-right: 10px;
-}
-
-/* ##################################################formadores######################################################## */
-.info_p{
-    border: 1px solid #000;
-}
-
-.info_p h1{
-    font-weight: 900;
-    font-size: 40px;
-    color: rgb(189, 189, 189);
-}
-
-.info_p p {
-    margin: 30px 0;
-    text-align: center;
-}
-.foto_f{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.foto_f .formador{
-    background-color: rgb(30, 30, 30);
-    margin-bottom: 60px;
-    position: relative;
-    display: inline-block;
-}
-
-.formador img{
-    display: block;
-    width: 300px;
-}
-
-.text_formador{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 280px;
-    position: absolute;
-    bottom: 0;
-      background-color:rgb(61, 61, 61);
-      color: #fff;
-      padding: 10px;
-      font-size: 16px;
 }
