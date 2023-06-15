@@ -17,3 +17,22 @@ let counter = setInterval(function(){
 
 
 });
+
+
+let enlaces_header = document.querySelectorAll(".navegation")[0];
+let icon_hamburguer = true;
+
+
+document.querySelectorAll(".menu")[0].addEventListener("click", function(){
+    if(icon_hamburguer){
+        document.querySelectorAll(".menu")[0].style.color="#fff";
+        icon_hamburguer = false;
+
+    }else{
+        document.querySelectorAll(".menu")[0].style.color="#000";
+        icon_hamburguer = true;
+    } 
+
+    enlaces_header.classList.toggle("MenuOpen");
+
+});
