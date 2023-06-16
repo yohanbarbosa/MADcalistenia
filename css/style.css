@@ -13,7 +13,7 @@ body{
     font-family: 'Wix Madefor Text','Roboto',sans-serif;
     background: url('https://i0.wp.com/www.styrkelabbet.se/wp-content/uploads/2014/12/St%C3%B6rre-muskeltillv%C3%A4xt.jpg?resize=768%2C426&ssl=1') no-repeat;
    background-size: cover; 
-  
+   background-position: center;
 
     /* background: #000; */
     
@@ -223,7 +223,7 @@ footer {
 /* ############################################### MEDIA-QUERY ###################################################### */
 @media screen and (max-width:700px) {
 
-    .menu{
+   .contenedor_header .menu{
         position: absolute;
         right: 0px;
         display: block;
@@ -265,8 +265,6 @@ footer {
  .enlaces{
     margin: 30px 0px; 
  }
-
-   
 
     .contenedor_header .Menuopen{
     clip-path: circle(150.0% at 0 0);
