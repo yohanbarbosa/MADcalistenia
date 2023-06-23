@@ -35,6 +35,66 @@
         </div> 
      </header>
 
+     <div class="wrapper">
+        <span class="icon_close"> 
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="form_login">
+            <h2>iniciar sesion</h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon" ><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required >
+                    <label for="">email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon" ><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required >
+                    <label for="">contraseña</label>
+                </div>
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">recordar</label>
+                    <a href="#">contraseña olvidada</a>
+                </div>
+                <button type="submit" id="btn" >enviar</button>
+                <div class="login-registre">
+                    <p>no tienes una cuenta ?<a href="#" class="registre_link" >registrarse</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form_registro">
+            <h2>registrarse</h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon" >
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="text" required >
+                    <label for="">nombre de usuario</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon" ><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" required >
+                    <label for="">email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon" ><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" required >
+                    <label for="">contraseña</label>
+                </div>
+                <div class="remember-forgot">
+                    <label for="">
+                        <input type="checkbox">terminos y condiciones</label>
+                </div>
+                <button type="submit" id="btn" >registrarse</button>
+                <div class="login-registre">
+                    <p>ya tengo una cuenta<a href="#" class="login_link" >iniciar sesion</a></p>
+                </div>
+            </form>
+        </div>
+     </div>
+
      <section>
         <div class="text">
             <h2>
@@ -75,6 +135,7 @@
             <a href=""><i class="fa-brands fa-facebook"></i></a>
         </div>
      </footer>
+     <script  src="js/javaScript.js"></script>
      <script src="https://kit.fontawesome.com/2e390c1c57.js" crossorigin="anonymous"></script>
     </body>
 </html>                 

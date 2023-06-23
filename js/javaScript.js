@@ -29,10 +29,37 @@ document.querySelectorAll(".menu")[0].addEventListener("click", function(){
         icon_hamburguer = false;
 
     }else{
-        document.querySelectorAll(".menu")[0].style.color="#000";
+        document.querySelectorAll(".menu")[0].style.color="#f05d07";
         icon_hamburguer = true;
     } 
 
     enlaces_header.classList.toggle("MenuOpen");
 
 });
+
+
+
+
+
+const wrapper  = document.querySelector('.wrapper');
+const loginlink  = document.querySelector('.login_link');
+const resgitrolink  = document.querySelector('.registre_link');
+const btnpopup  = document.getElementById('buttonbtn');
+const iconclose  = document.querySelector('.icon_close');
+
+
+resgitrolink.addEventListener('click',()=> {
+wrapper.classList.add('active');
+});
+
+loginlink.addEventListener('click',()=> {
+    wrapper.classList.remove('active');
+    });
+
+    btnpopup.addEventListener('click',()=> {
+        wrapper.classList.add('active_btn');
+    });
+
+    iconclose.addEventListener('click',()=> {
+        wrapper.classList.remove('active_btn');
+    });

@@ -14,8 +14,8 @@ body{
     background: url('https://i0.wp.com/www.styrkelabbet.se/wp-content/uploads/2014/12/St%C3%B6rre-muskeltillv%C3%A4xt.jpg?resize=768%2C426&ssl=1') no-repeat;
    background-size: cover; 
    background-position: center;
-
-    /* background: #000; */
+    
+   
     
 }
 
@@ -102,7 +102,183 @@ text-decoration: none;
     font-size: 40px;
     line-height: 78px;
 }
+/* ##################################### login ########################################################### */
+.wrapper{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255 ,255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba( 0 , 0 , 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform .5s ease,  height .2s ease;
+    transform: scale(0);
+}
 
+.wrapper.active_btn{
+    transform: scale(1);
+
+}
+
+.wrapper.active{
+    height: 520px;
+    
+}
+.wrapper .icon_close{
+position: absolute;
+right: 0;
+top: 0;
+width: 45px;
+height: 45px;
+background: #7e7e7e;
+font-size: 30px;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+border-bottom-left-radius: 20px;
+z-index: 1;
+}
+
+.wrapper .form_login{
+    width: 100%;
+    padding:40px;
+}
+
+.wrapper .form_login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.wrapper.active .form_login{
+    transition: none;
+    transform: translateX(-400px);
+}
+.wrapper .form_registro{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form_registro{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.wrapper h2{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.input_box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #000;
+    margin: 30px 0 ;
+}
+
+.input_box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input_box input:focus~label,
+.input_box input:valid~label{
+    top: -5px;
+}
+
+.input_box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input_box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 15px;
+    color: #fff;
+    top: 20px;
+}
+
+.remember-forgot{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    accent-color: #f05d07;
+    margin-right: 5px;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+#btn{
+    width: 100%;
+    height: 45px;
+    background-color: #808080;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.login-registre{
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-registre p a {
+    color: #808080;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+}
+.login-registre p a:hover{
+    text-decoration: underline;
+}
+.wrapper .form_registro{
+    position: absolute;
+    transform: translate(400px);
+}
 /* ##############################################section################################################### */
 
 section{
@@ -221,27 +397,45 @@ footer {
    
 
 /* ############################################### MEDIA-QUERY ###################################################### */
-@media screen and (max-width:700px) {
+
+
+@media screen and (max-width:700px){
 
    .contenedor_header .menu{
         position: absolute;
         right: 0px;
         display: block;
+        
     }
 
     .navegation{
-        /* position: fixed;
+        border: 2px solid rgba(255 ,255, 255, .5);
+        backdrop-filter: blur(20px);
+        border: 1px solid #aaa;
+        position: fixed;
         top: 0;
         right: 0;
-        width: 100%;
+        width: 50%;
         height: 100vh;
         display: flex;
         align-items: center;
-        flex-direction: column; */
+        text-align: center;
+        flex-direction: column;
         clip-path: circle(0.0% at 0 0);
     }
-
-    
+    .navegation a{
+        margin: 30px 0 ;
+        font-size: 20px;
+    }
+    .navegation #buttonbtn{
+        margin-left: 25px;
+        
+    }
+    .contenedor_header>a{
+        position: absolute;
+        left: 100px;
+        top: 50px;
+    }
 
     section{
         margin-top: 0;
