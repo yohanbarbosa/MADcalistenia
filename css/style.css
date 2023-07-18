@@ -328,9 +328,14 @@ footer {
 
 .correo{
     display: flex;
+    align-items: center;
     text-align: center;
    justify-content: center;
     color: #aaa;
+}
+.correo > i {
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 .enlaces{
@@ -361,7 +366,7 @@ footer {
 /* ############################################### MEDIA-QUERY ###################################################### */
 
 
-@media screen and (max-width:700px){
+@media Screen and (max-width:700px){
     
  .contenedor_header .logo{
     position: absolute;
