@@ -361,12 +361,18 @@ footer {
 /* ############################################### MEDIA-QUERY ###################################################### */
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:700px){
     
  .contenedor_header .logo{
     position: absolute;
     right: 30px;
     top: 50px;
+ }
+ .logo img{
+    width: 100px;
+ }
+ .logo span{
+    font-size: 30px;
  }
    .contenedor_header .menu{
         position: absolute;
@@ -420,7 +426,7 @@ footer {
         .contenedor_header .Menuopen{
         clip-path: circle(150.0% at 0 0);
         }
-    /* ########################################### text #################################################### */
+    /* ########################################### section #################################################### */
 
 
     section{
@@ -455,13 +461,12 @@ footer {
     }
  .parfooter h3 {
     font-size: 45px;
-    border: 1px solid #fff;
+    
     margin-bottom: 40px;
  }
  .correo {
     font-size: 40px;
  }
-
  
     .enlaces a{
         font-size: 40px; 
@@ -469,5 +474,6 @@ footer {
 
     .redes i {
         font-size: 40px ;
+        margin: 0 10px 0 10px;
     }
 }
