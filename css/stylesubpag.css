@@ -114,24 +114,6 @@ section p {
 
 /* ################################section pag programas #########################*/
 
-.info_pro{
-    display: flex;
-    margin: 50px 50px 100px 115px  ;
-    
-    width: 600px;
-}
-.info_pro .titulo_pro{
-    margin-left: 10px;
-    font-size: 50px;
-    font-weight: 900;
-    color: #aaaaaa;
-}
-.info_pro p{
-   margin-left: 10px;
-    margin-top: 20px;
-    color: gray;
-}
-
 .programas{
     display: flex;
     flex-wrap: wrap;
@@ -203,7 +185,6 @@ section p {
     position: relative;
     border: 1px solid #000;
     width: 350px;
-    height: 450px;
     word-wrap: break-word;
     padding: 10px;
    
@@ -222,12 +203,13 @@ section p {
     
     color: #f05d07;
     font-size: 30px;
+    margin: 50px 0;
  }
 
  .content_plan .btn{
  
     border: 1px solid #ffffff;
-    bottom: 25px;
+    bottom: 0;
     left: 10%;
     position: absolute;
     width: 150px;
@@ -276,6 +258,8 @@ section p {
       padding: 10px;
       font-size: 16px;
 }
+
+
 /* #########################pie de pagina para las subpaginas################################### */
 footer {
     display: flex;
@@ -469,22 +453,46 @@ i{
            position: absolute;
            left: 100px;
            top: 20px;
-       }
-       
-       
-           .contenedor_header .MenuOpen{
-           clip-path: circle(150.0% at 0 0);
-           }
-       /* ########################################### sections #################################################### */
+        }
+        
+        #buttonbtn{
+            display: none;
+        }
+        .contenedor_header .MenuOpen{
+            clip-path: circle(150.0% at 0 0);
+        }
+
+
+ /* ################################## titulo de las sub paginas  ################################################# */
+         
+        .title{
+            margin:0;
+            padding: 20px;
+        }
+        .title h2{
+            margin: 0;
+        }
+/* #################################################### sections ############################################################### */
    
        /* ########################sobre nosotros###################### */
    section {
     margin-left: 50px;
    }
   
-       /* ##########################forma############################ */
+       /* ##########################testimonial############################ */
+        .testimonio{
+            margin-bottom:50px ;
+        }
    
-   
+       .autor{
+        order: -1
+        }
+/* ################################## section precios ######################################## */
+
+        .content_plan{
+            margin-bottom: 60px;
+        }
+        
    /* ################################################### footer ########################################################### */
        footer{
        flex-direction: column;
@@ -495,21 +503,20 @@ i{
            width: 100%;
        }
     .parfooter h3 {
-       font-size: 45px;
-       border: 1px solid #fff;
+       font-size: 20px;
        margin-bottom: 40px;
     }
     .correo {
-       font-size: 40px;
+       font-size: 20px;
     }
    
     
        .enlaces > a{
-           font-size: 40px; 
+           font-size: 20px; 
        }
    
        .redes i {
-           font-size: 40px ;
+           font-size: 20px ;
        }
    }
    
