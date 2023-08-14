@@ -114,6 +114,7 @@ text-decoration: none;
     overflow: hidden;
     transition: transform .5s ease,  height .2s ease;
     transform: scale(0);
+    
 }
 
 .wrapper.active_btn{
@@ -273,6 +274,33 @@ text-decoration: none;
     position: absolute;
     transform: translate(400px);
 }
+
+/* ######################################### MENSAJE ################################################################# */
+
+.mensaje{
+    width: 40%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transition: opacity 0.5s ease-in-out;
+    background: transparent;
+    border: 2px solid rgba(255 ,255, 255, .5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba( 0 , 0 , 0, .5);
+    color: #fff;
+    font-size: 25px;
+    transform: scale(0);
+}
+.mensaje_activo{
+    transform: scale(1);
+    transform: translate(-50%, -50%);
+}
+
 /* ##############################################section################################################### */
 
 
