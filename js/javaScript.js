@@ -1,3 +1,5 @@
+//########################################### CONTADOR ####################################################################################
+
 let valuedisplay = document.querySelectorAll(".numero");
 let interval = 1500;
 
@@ -25,12 +27,13 @@ let icon_hamburguer = true;
 
 
 document.querySelectorAll(".menu")[0].addEventListener("click", function(){
+    
     if(icon_hamburguer){
-        document.querySelectorAll(".menu")[0].style.color="#fff";
+        document.querySelectorAll(".menu")[0].style.color="#f05d07";
         icon_hamburguer = false;
 
     }else{
-        document.querySelectorAll(".menu")[0].style.color="#f05d07";
+        document.querySelectorAll(".menu")[0].style.color="#fff";
         icon_hamburguer = true;
     } 
 
@@ -40,7 +43,7 @@ document.querySelectorAll(".menu")[0].addEventListener("click", function(){
 
 
 
-
+//################################################ LOGIN ##################################################################################
 
 const wrapper  = document.querySelector('.wrapper');
 const loginlink  = document.querySelector('.login_link');
@@ -59,8 +62,53 @@ loginlink.addEventListener('click',()=> {
 
     btnpopup.addEventListener('click',()=> {
         wrapper.classList.add('active_btn');
+        enlaces_header.classList.remove('MenuOpen');
     });
 
     iconclose.addEventListener('click',()=> {
         wrapper.classList.remove('active_btn');
     });
+
+    //############################################### VAlIDACIONES ##########################################################
+
+
+    const form = document.querySelector('.form_login');
+    const mensaje = document.querySelector('.mensaje');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        let email = document.getElementById('email');
+        let password = document.getElementById('password');
+
+        if(email.value == '' || password == ''){
+            mensaje.innerHTML = "debe ingresar los datos";
+        }else{
+            mensaje.innerHTML = `bienvenido ${email.value}` ;
+            email.value = '';
+            password.value = '';
+            wrapper.classList.remove('active_btn');
+            mensaje.classList.add('mensaje_activo');
+        }
+
+        setTimeout(function() {
+            mensaje.classList.remove('mensaje_activo');
+        }, 2000);
+    });
+
+    
+
+    const formLogin = document.querySelector('.form_registro');
+    
+    formLogin.addEventListener('submit',function(event){
+        event.preventDefault();
+        let name = document.getElementById('name');
+        let email = document.getElementById('email_login');
+        let password = document.getElementById('password_login');
+        email.value = '';
+        password.value = '';
+        
+    });
+
+
+    
+    
