@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2? family= Wix+Madefor+Text & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Wix+Madefor+Text & display=swap');
 
-  *{
-    margin: 0% ;
+* {
+    margin: 0%;
     padding: 0%;
 }
 
-body{
-    box-sizing:border-box;
-    font-family: 'Wix Madefor Text','Roboto',sans-serif;
+body {
+    box-sizing: border-box;
+    font-family: 'Wix Madefor Text', 'Roboto', sans-serif;
     background: url('https://i0.wp.com/www.styrkelabbet.se/wp-content/uploads/2014/12/St%C3%B6rre-muskeltillv%C3%A4xt.jpg?resize=768%2C426&ssl=1') no-repeat;
-   background-size: cover; 
-   background-position: center;
+    background-size: cover;
+    background-position: center;
 
 }
 
-.contenedor_header{
+.contenedor_header {
     display: flex;
     width: 100%;
     height: 15vh;
@@ -24,11 +24,11 @@ body{
     align-items: center;
 }
 
-.contenedor_header .navegation a{
-margin-left: 20px;
-color: #fff;
-font-weight: 600;
-text-decoration: none;
+.contenedor_header .navegation a {
+    margin-left: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .contenedor_header .login {
@@ -36,26 +36,27 @@ text-decoration: none;
     border-radius: 7px;
     text-align: center;
 }
-.contenedor_header .login a{
+
+.contenedor_header .login a {
     color: #fff;
     font-size: 17px;
     font-weight: 600;
     text-decoration: none;
 }
 
-.logo a{
+.logo a {
     display: flex;
     align-items: center;
     color: #fff;
     text-decoration: none;
 }
 
-.logo img{
+.logo img {
     width: 60px;
     margin-right: 5px;
 }
 
-#buttonbtn{
+#buttonbtn {
     margin-left: 100px;
     width: 130px;
     height: 50px;
@@ -69,18 +70,18 @@ text-decoration: none;
     color: #fff;
 }
 
-.contenedor_header #buttonbtn:hover{
+.contenedor_header #buttonbtn:hover {
     background-color: #e4e4e4;
-    color:#000;
+    color: #000;
     transition: all ease-in-out .5s;
 }
 
-.contenedor_header .navegation a:hover{
+.contenedor_header .navegation a:hover {
     color: #f05d07;
     transition: all ease-in-out .3s;
 }
 
-.menu{
+.menu {
     color: #e4e4e4;
     height: 80px;
     width: 80px;
@@ -91,42 +92,44 @@ text-decoration: none;
     display: none;
 }
 
-.menu >i{
+.menu>i {
     font-size: 40px;
     line-height: 78px;
 }
+
 /* ##################################### login ########################################################### */
-.wrapper{
+.wrapper {
     position: absolute;
     top: 20%;
     left: 50%;
-    translate:calc(-50%);
+    translate: calc(-50%);
     width: 400px;
     height: 450px;
     background: transparent;
-    border: 2px solid rgba(255 ,255, 255, .5);
+    border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba( 0 , 0 , 0, .5);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: transform .5s ease,  height .2s ease;
+    transition: transform .5s ease, height .2s ease;
     transform: scale(0);
-    
+
 }
 
-.wrapper.active_btn{
+.wrapper.active_btn {
     transform: scale(1);
-    
+
 }
 
-.wrapper.active{
+.wrapper.active {
     height: 520px;
-    
+
 }
-.wrapper .icon_close{
+
+.wrapper .icon_close {
     position: absolute;
     right: 0;
     top: 0;
@@ -143,44 +146,47 @@ text-decoration: none;
     z-index: 1;
 }
 
-.wrapper .form_login{
+.wrapper .form_login {
     width: 100%;
-    padding:40px;
+    padding: 40px;
 }
 
-.wrapper .form_login{
+.wrapper .form_login {
     transition: transform .18s ease;
     transform: translateX(0);
 }
-.wrapper.active .form_login{
+
+.wrapper.active .form_login {
     transition: none;
     transform: translateX(-400px);
 }
-.wrapper .form_registro{
+
+.wrapper .form_registro {
     position: absolute;
     transition: none;
     transform: translateX(400px);
 }
 
-.wrapper.active .form_registro{
+.wrapper.active .form_registro {
     transition: transform .18s ease;
     transform: translateX(0);
 }
-.wrapper h2{
+
+.wrapper h2 {
     font-size: 20px;
     color: #fff;
     text-align: center;
 }
 
-.input_box{
+.input_box {
     position: relative;
     width: 100%;
     height: 50px;
     border-bottom: 2px solid #000;
-    margin: 30px 0 ;
+    margin: 30px 0;
 }
 
-.input_box label{
+.input_box label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -191,12 +197,13 @@ text-decoration: none;
     pointer-events: none;
     transition: .5s;
 }
+
 .input_box input:focus~label,
-.input_box input:valid~label{
+.input_box input:valid~label {
     top: -5px;
 }
 
-.input_box input{
+.input_box input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -208,7 +215,7 @@ text-decoration: none;
     padding: 0 35px 0 5px;
 }
 
-.input_box .icon{
+.input_box .icon {
     position: absolute;
     right: 8px;
     font-size: 15px;
@@ -216,7 +223,7 @@ text-decoration: none;
     top: 20px;
 }
 
-.remember-forgot{
+.remember-forgot {
     font-size: 15px;
     color: #fff;
     font-weight: 500;
@@ -225,21 +232,21 @@ text-decoration: none;
     justify-content: space-between;
 }
 
-.remember-forgot label input{
+.remember-forgot label input {
     accent-color: #f05d07;
     margin-right: 5px;
 }
 
-.remember-forgot a{
+.remember-forgot a {
     color: #fff;
     text-decoration: none;
 }
 
-.remember-forgot a:hover{
+.remember-forgot a:hover {
     text-decoration: underline;
 }
 
-.btn{
+.btn {
     width: 100%;
     height: 45px;
     background-color: #808080;
@@ -250,10 +257,10 @@ text-decoration: none;
     font-size: 20px;
     color: #fff;
     font-weight: 500;
-    
+
 }
 
-.login-registre{
+.login-registre {
     font-size: 14px;
     color: #fff;
     text-align: center;
@@ -267,17 +274,19 @@ text-decoration: none;
     margin-left: 10px;
     font-weight: 500;
 }
-.login-registre p a:hover{
+
+.login-registre p a:hover {
     text-decoration: underline;
 }
-.wrapper .form_registro{
+
+.wrapper .form_registro {
     position: absolute;
     transform: translate(400px);
 }
 
 /* ######################################### MENSAJE ################################################################# */
 
-.mensaje{
+.mensaje {
     width: 40%;
     height: 20vh;
     display: flex;
@@ -289,14 +298,15 @@ text-decoration: none;
     border-radius: 20px;
     transition: opacity 0.5s ease-in-out;
     background: transparent;
-    border: 2px solid rgba(255 ,255, 255, .5);
+    border: 2px solid rgba(255, 255, 255, .5);
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba( 0 , 0 , 0, .5);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     color: #fff;
     font-size: 25px;
     transform: scale(0);
 }
-.mensaje_activo{
+
+.mensaje_activo {
     transform: scale(1);
     transform: translate(-50%, -50%);
 }
@@ -304,24 +314,25 @@ text-decoration: none;
 /* ##############################################section################################################### */
 
 
-.text{
+.text {
     display: block;
     margin: 150px 0 150px 120px;
 }
 
-.text>h2{
+.text>h2 {
     font-size: 40px;
-    font-weight:900;
+    font-weight: 900;
     margin-bottom: 20px;
     color: #f05d07;
 }
 
-.text>h3{
+.text>h3 {
     font-size: 35px;
     font-weight: 900px;
     color: #fff;
 }
-.text  p {
+
+.text p {
     margin-top: 20px;
     width: 55%;
     font-size: 20px;
@@ -332,45 +343,49 @@ text-decoration: none;
 /* #########################pie de pagina######################################## */
 
 footer {
-   display: flex;
-   width: 100%;
-   
-   overflow: hidden;
-   flex-wrap: nowrap;
-   justify-content: space-between;  
+    display: flex;
+    width: 100%;
+
+    overflow: hidden;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
-.parfooter{
+
+.parfooter {
     width: 30%;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 .parfooter h3 {
     color: #fff;
     margin-bottom: 20px;
 }
 
-.contacto{
+.contacto {
     display: block;
     text-align: center;
 }
 
-.correo{
+.correo {
     display: flex;
     align-items: center;
     text-align: center;
-   justify-content: center;
+    justify-content: center;
     color: #aaa;
 }
-.correo > i {
+
+.correo>i {
     font-size: 30px;
     margin-right: 10px;
 }
 
-.enlaces{
+.enlaces {
     display: flex;
     flex-direction: column;
 }
+
 .enlaces a {
     margin-bottom: 20px;
     text-decoration: none;
@@ -379,49 +394,54 @@ footer {
 }
 
 .redes a {
- color: #aaa;
- font-size: 20px;
- margin-left: 15px;
+    color: #aaa;
+    font-size: 20px;
+    margin-left: 15px;
 }
 
-.enlaces a:hover{
+.enlaces a:hover {
     color: #f05d07;
     transition: all ease-in-out .5s;
 }
-.redes a:hover{
+
+.redes a:hover {
     color: #f05d07;
     transition: all ease-in-out .5s;
 }
+
 /* ############################################### MEDIA-QUERY ###################################################### */
 
 
-@media Screen and (max-width:1000px){
-    
- .contenedor_header .logo{
-    position: absolute;
-    right: 30px;
-    top: 50px;
- }
- .logo img{
-    width: 100px;
- }
- .logo span{
-    font-size: 30px;
- }
-   .contenedor_header .menu{
+@media Screen and (max-width:1000px) {
+
+    .contenedor_header .logo {
+        position: absolute;
+        right: 30px;
+        top: 50px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .logo span {
+        font-size: 30px;
+    }
+
+    .contenedor_header .menu {
         position: absolute;
         left: 40px;
         top: 40px;
         display: block;
     }
 
-    .menu > i {
+    .menu>i {
         font-size: 80px;
         position: fixed;
     }
 
-    .navegation{
-        border: 2px solid rgba(255 ,255, 255, .5);
+    .navegation {
+        border: 2px solid rgba(255, 255, 255, .5);
         backdrop-filter: blur(20px);
         border: 1px solid #aaa;
         position: fixed;
@@ -429,86 +449,101 @@ footer {
         left: 0;
         width: 50%;
         height: 100vh;
-        padding-top:40%;
+        padding-top: 40%;
         display: flex;
         align-items: center;
         text-align: center;
         flex-direction: column;
         clip-path: circle(0.0% at 0 0);
     }
-    .navegation a{
-        margin: 30px 0 ;
+
+    .navegation a {
+        margin: 30px 0;
         font-size: 40px;
     }
-    .navegation #buttonbtn{
-    margin:20px 0 0 10px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 70px;
-    font-size: 30px;
+
+    .navegation #buttonbtn {
+        margin: 20px 0 0 10px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 70px;
+        font-size: 30px;
     }
-    .contenedor_header>a{
+
+    .contenedor_header>a {
         position: absolute;
         left: 100px;
         top: 50px;
     }
-    
-    
-        .contenedor_header .Menuopen{
+
+
+    .contenedor_header .Menuopen {
         clip-path: circle(150.0% at 0 0);
-        }
+    }
+
     /* ########################################### section #################################################### */
 
 
-    section{
+    section {
         margin-top: 0;
     }
 
-    .text h2{
+    .text h2 {
         width: 300px;
         font-size: 80px;
         margin-bottom: 60px;
-    }    
-    .text h3{
-        margin-bottom:60px ;
+    }
+
+    .text h3 {
+        margin-bottom: 60px;
         font-size: 50px;
         width: 80%;
     }
+
     .text p {
         margin-top: 40px;
-        width: 800px; 
+        width: 800px;
         font-size: 40px;
     }
-/* ################################################### LOGIN ############################################################################# */
 
+    /* ################################################### LOGIN ############################################################################# */
 
-/* ################################################### footer ########################################################### */
-    footer{
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
+.wrapper{
+
+    background-color: #fff;
+    width: 90%;
+    height: 45vh;
+}
+    /* ################################################### footer ########################################################### */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
     }
-    .parfooter{
+
+    .parfooter {
         width: 100%;
     }
- .parfooter h3 {
-    font-size: 45px;
-    
-    margin-bottom: 40px;
- }
- .correo {
-    font-size: 40px;
- }
- 
-    .enlaces a{
-        font-size: 40px; 
+
+    .parfooter h3 {
+        font-size: 45px;
+
+        margin-bottom: 40px;
+    }
+
+    .correo {
+        font-size: 40px;
+    }
+
+    .enlaces a {
+        font-size: 40px;
     }
 
     .redes i {
-        font-size: 40px ;
+        font-size: 40px;
         margin: 0 10px 0 10px;
     }
 }
