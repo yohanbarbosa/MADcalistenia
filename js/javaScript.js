@@ -54,6 +54,7 @@ const iconclose  = document.querySelector('.icon_close');
 
 resgitrolink.addEventListener('click',()=> {
 wrapper.classList.add('active');
+
 });
 
 loginlink.addEventListener('click',()=> {
