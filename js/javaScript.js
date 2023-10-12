@@ -69,6 +69,7 @@ loginlink.addEventListener('click',()=> {
 
     iconclose.addEventListener('click',()=> {
         wrapper.classList.remove('active_btn');
+        wrapper.classList.remove('active');
     });
 
     //############################################### VAlIDACIONES ##########################################################
