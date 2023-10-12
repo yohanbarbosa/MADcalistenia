@@ -54,11 +54,12 @@ const iconclose  = document.querySelector('.icon_close');
 
 resgitrolink.addEventListener('click',()=> {
 wrapper.classList.add('active');
-
+wrapper.style.height = "75vh";
 });
 
 loginlink.addEventListener('click',()=> {
     wrapper.classList.remove('active');
+    wrapper.style.height = "70vh";
     });
 
     btnpopup.addEventListener('click',()=> {
